@@ -14,8 +14,8 @@ import java.util.concurrent.LinkedBlockingQueue;
 class LogDispatcher extends Thread {
 
     private static final String TAG = "LogDispatcher";
-    //每次只查看50K日志数据,超过50K则清除一次数据
-    private final int MAX_LOG_SIZE = 1024 * 1000;
+    //每次只查看2M日志数据,超过50K则清除一次数据
+    private final int MAX_LOG_SIZE = 2024 * 1000;
 
     /**
      * 存储日志的队列
